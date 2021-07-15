@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "My Epitech Percentages",
+    "description": "Show each project passing tests percentage on my.epitech.eu",
+    "version": "1.1.1",
+    "permissions": [
+        "*://my.epitech.eu/*",
+        "https://api.epitest.eu/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["*://my.epitech.eu/*"],
+            "js": ["content.js"]
+        }
+    ]
+}
